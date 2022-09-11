@@ -49,11 +49,13 @@ $$\large MOD \quad$$ `#define Mod 1'000'000'007` used as common **Modulus** for 
 </table>
 </div>
 
+
 ```cpp
 #include <cmath>
 floor(1.1); // 1
 flooe(1.7); // 1
 ```
+
 
 2. **ceil** $$\large ceil(x)=\lceil x \rceil$$
 **ceil()** function **computes the smallest integer that is greater than or equal to x.**
@@ -89,6 +91,8 @@ flooe(1.7); // 1
 </tbody>
 </table>
 </div>
+
+
 ```cpp
 #include <cmath>
 ceil(1.1); // 2
@@ -132,6 +136,8 @@ ceil(1.7); // 2
 </table>
 </div>
 
+
+
 ```cpp
 #include <cmath>
 round(1.1); // 1
@@ -170,6 +176,8 @@ round(1.7); // 2
 </tbody>
 </table>
 </div>
+
+
 ```cpp
 #include <cmath>
 trunc(1.1); // 1
@@ -191,7 +199,7 @@ trunc(1.7); // 2
 
 ## Factorization
 a **factors** of on a number are the digits that this number is divisble by
-we can get all factor of a number in order if O($\sqrt{n}$)
+we can get all factor of a number in order if O( $\sqrt{n}$ )
 ```cpp 
 vector < ll > Get_Divisors(ll n){
 	vector < ll > divisors;
@@ -215,8 +223,8 @@ vector < ll > Get_Divisors(ll n){
 
 ## Prime numbers
 ### Primality test
-**a prime number ** is a number that can only be divided by 1 and itself
-we can determine if a number is prime or not by order of O($\sqrt{n}$)
+**a prime number** is a number that can only be divided by 1 and itself
+we can determine if a number is prime or not by order of O( $\sqrt{n}$ )
 ```cpp
 bool is_prime(ll n){
 
@@ -233,7 +241,7 @@ bool is_prime(ll n){
 ### prime factorization 
 there is a theory that any number can be represented by a collection of prime numbers risen to a a certain power 
 $$\Huge n = p_1^a \times p_2^b \times p_3^c \times \dots $$
-in the worst case this algorithm wil get excuted inorder of O($\large\sqrt{n}$) but that is only the case for prime numbers.
+in the worst case this algorithm wil get excuted inorder of O( $\large\sqrt{n}$ ) but that is only the case for prime numbers.
 ```cpp
 vector < int > prime_factorization(ll n){
 
@@ -250,10 +258,10 @@ vector < int > prime_factorization(ll n){
 	return factors;
 }
 ```
-[problem])(https://www.codechef.com/problems/GEEK09)
+[problem](https://www.codechef.com/problems/GEEK09)
 ## binary exponatation
-it's a an algorithm to calculate the a number raised to a certain power in order of O($\log{n}$)
-instead of order of O)(n)
+it's a an algorithm to calculate the a number raised to a certain power in order of O( $\log{n}$ )
+instead of order of O(n)
  ```cpp
  ll fast_power(ll x , ll b)
 
